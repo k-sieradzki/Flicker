@@ -5,7 +5,7 @@ Additionally, users can enjoy the following features:
 
 Live: https://flicker2.netlify.app/
 
-You can create your own accout or use test account below
+You can create your own account or use the test account below (please don't delete this account after usage).
 
 Email: flicker@test.com 
 
