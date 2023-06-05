@@ -4,8 +4,11 @@ Flicker is an application that allows users to retrieve information about your f
 Additionally, users can enjoy the following features:
 
 Live: https://flicker2.netlify.app/
+
 You can create your own accout or use test account below
+
 Email: flicker@test.com 
+
 Password: flicker 
 
 ## Features
