@@ -1,6 +1,6 @@
 # Flicker App
 
-![Flicker App](https://imgur.com/w48S4QS)
+![Flicker App](https://i.imgur.com/w48S4QS.jpeg)
 
 Flicker is an application that allows users to retrieve information about your favorite movies/shows, such as release date, details about the cast, and the ability to watch trailers.
 Additionally, users can enjoy the following features:
