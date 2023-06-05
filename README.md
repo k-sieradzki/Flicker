@@ -3,6 +3,11 @@
 Flicker is an application that allows users to retrieve information about your favorite movies/shows, such as release date, details about the cast, and the ability to watch trailers.
 Additionally, users can enjoy the following features:
 
+Live: https://flicker2.netlify.app/
+You can create your own accout or use test account below
+Email: flicker@test.com 
+Password: flicker 
+
 ## Features
 
 - User registration and account creation
