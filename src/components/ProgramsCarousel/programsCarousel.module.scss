@@ -1,0 +1,113 @@
+.scrollMainContainer {
+	padding: 30px 0 30px 0;
+}
+
+.swiperSlide {
+	margin: 0 15px;
+	width: 155px;
+	height: 235px;
+}
+
+.swiperSlideBig {
+	margin: 0 20px;
+	width: 233px;
+	height: 353px;
+}
+
+.mySwiper {
+	padding-left: 2%;
+	min-height: 185px;
+}
+.mySwiperBig {
+	padding-left: 2%;
+	min-height: 315px;
+}
+
+.loadingBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 2px solid transparent;
+	cursor: pointer;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-color: var(--color-placeholder);
+	}
+}
+
+.cardBig {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border: 2px solid transparent;
+	cursor: pointer;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		background-color: var(--color-placeholder);
+	}
+}
+
+.listBtn {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+.card:hover {
+	border: 2px solid var(--color-primary);
+	.listBtn {
+		display: block;
+	}
+}
+
+.cardBig:hover {
+	border: 2px solid var(--color-primary);
+	.listBtn {
+		display: block;
+	}
+}
+
+.movieScore {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 35px;
+	height: 25px;
+	line-height: 25px;
+	border-radius: 5px;
+	text-align: center;
+	color: var(--color-textOnColor);
+	background-color: var(--color-primary);
+	font-size: 14px;
+}
+
+.carouselTitle {
+	padding: 5px 10px;
+	color: var(--color-primaryTextColor);
+	h3 {
+		display: inline;
+		margin: 5px 2%;
+	}
+	.icon {
+		font-size: 16px;
+		line-height: 16px;
+		transition: margin-left 0.1s;
+	}
+}
+.carouselTitle:hover {
+	.icon {
+		margin-left: 5px;
+	}
+}

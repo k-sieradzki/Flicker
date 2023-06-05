@@ -1,0 +1,63 @@
+.profileForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+select:has(option:disabled:checked[hidden]) {
+	color: var(--color-placeholder);
+}
+
+select option {
+	color: var(--color-primaryTextColor);
+}
+
+.profileForm {
+	position: relative;
+	.formDiv {
+		width: 100%;
+		max-width: 350px;
+	}
+	.profileLabel {
+		font-size: 0.7em;
+	}
+	label {
+		color: var(--color-primaryTextColor);
+	}
+	input,
+	select {
+		padding: 15px 15px;
+		color: var(--color-primaryTextColor);
+		background-color: var(--color-formInput);
+		border: none;
+		border-radius: 10px;
+	}
+	input {
+		width: 100%;
+	}
+	select {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+
+	input:focus {
+		background-color: var(--color-formInputFocus);
+	}
+}
+
+.updateBtn {
+	width: 100%;
+	max-width: 250px;
+}
+
+.profileUpdateInfo {
+	position: absolute;
+	bottom: 50px;
+	height: 30px;
+	max-width: 350px;
+	overflow: auto;
+	font-size: 0.8em;
+	color: var(--color-successAlert);
+	margin-bottom: 10px;
+}

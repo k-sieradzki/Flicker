@@ -1,0 +1,224 @@
+.hamburgerExpand::-webkit-scrollbar {
+	display: none;
+}
+
+.navbarMainContainer {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: var(--color-primaryTextColor);
+	transition: all 0s ease;
+	z-index: 2;
+}
+.blackNavbar {
+	background-color: var(--color-background);
+	color: var(--color-navBarFull);
+	.genreBtns {
+		button {
+			color: var(--color-navBarFull);
+		}
+	}
+}
+.transparentNavbar {
+	background-color: transparent;
+	color: var(--color-navBarTransparent);
+	.genreBtns {
+		button {
+			color: var(--color-navBarTransparent);
+		}
+	}
+}
+
+.logoBox {
+	padding: 5px;
+	font-family: 'Bungee', serif;
+	color: var(--color-primary);
+	font-size: 22px;
+	cursor: pointer;
+	text-shadow: 2px 2px var(--color-primaryShadow);
+}
+
+.categoriesBox {
+	display: flex;
+	flex-direction: row;
+
+	.mainCategory {
+		padding: 8px 10px;
+		margin-left: 10px;
+		cursor: pointer;
+	}
+}
+
+.Navbar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.leftNavbar {
+	display: flex;
+	align-items: center;
+}
+
+.genreBtns {
+	display: none;
+	.colorPrimary {
+		font-weight: bold;
+		color: var(--color-primary) !important;
+	}
+	button {
+		padding: 5px 5px;
+		margin: 10px 0;
+		font-size: 18px;
+		font-weight: 300;
+		color: var(--color-navBarTransparent);
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+}
+
+.midNavbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 140px;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+
+.rightNavbar {
+	display: flex;
+	align-items: center;
+}
+
+.hamburger,
+.searchBox,
+.hambIcon {
+	cursor: pointer;
+	padding: 5px 10px;
+}
+
+.closeHamburger {
+	display: flex;
+	padding: 0 15px;
+}
+.hamburger {
+	display: block;
+}
+
+.showMenu {
+	left: 0;
+	transition: all 0.1s ease;
+	opacity: 1;
+}
+.hideMenu {
+	left: -222px;
+	opacity: 0;
+	transition: all 0.1s ease;
+}
+
+.hamburgerExpand {
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 100vh;
+	width: 222px;
+	color: var(--color-primaryTextColor);
+	background-color: var(--color-background);
+	overflow: scroll;
+	z-index: 7;
+
+	ul {
+		padding: 10px 20px;
+		li {
+			list-style-type: none;
+			padding: 5px 5px;
+			margin: 10px 0;
+			font-size: 18px;
+			font-weight: 300;
+			cursor: pointer;
+		}
+	}
+}
+
+.profileImg {
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	border: 2px solid var(--color-primary);
+	overflow: hidden;
+	margin-left: 10px;
+	cursor: pointer;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.showOptions {
+	display: flex;
+}
+.hideOptions {
+	display: none;
+}
+
+.profileOptions {
+	position: absolute;
+	flex-direction: column;
+	top: 60px;
+	right: 20px;
+	font-size: 18px;
+	border-radius: 5px;
+
+	.optionHR {
+		background-color: var(--color-primaryTextColor);
+		border: none;
+		height: 1px;
+	}
+}
+
+.option {
+	font-weight: 300;
+	padding: 10px 0;
+	cursor: pointer;
+	border: none;
+	color: var(--color-primaryTextColor);
+	background-color: var(--color-background);
+	a {
+		padding: 10px 30px;
+	}
+}
+.option:hover {
+	color: var(--color-primary);
+}
+
+@media (min-width: 576px) {
+	.hamburger,
+	.searchBox,
+	.hambIcon {
+		font-size: 25px;
+	}
+	.profileImg {
+		height: 35px;
+		width: 35px;
+	}
+	.logoBox {
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 768px) {
+	.genreBtns {
+		display: block;
+	}
+}

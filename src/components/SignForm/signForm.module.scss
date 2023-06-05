@@ -1,0 +1,55 @@
+.signForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 17px;
+	color: var(--color-textOnColor);
+	input[type='email'],
+	input[type='password'] {
+		padding: 15px 30px;
+		margin: 5px 0;
+		color: var(--color-textOnColor);
+		background-color: var(--color-inputLoginColor);
+		border: 1px solid transparent;
+		outline: none;
+		border-radius: 5px;
+		width: 250px;
+	}
+	input[type='email']:focus,
+	input[type='password']:focus {
+		background-color: var(--color-inputLoginFocus);
+	}
+}
+
+.inputBox {
+	position: relative;
+}
+.loginBoxIcon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	color: var(--color-grayTextLogin);
+	pointer-events: none;
+	font-size: 14px;
+}
+
+.errorInput {
+	border: 1px solid red !important;
+}
+
+.errorBox {
+	font-size: 0.8em;
+	color: red;
+	padding: 5px 0 10px 5px;
+	margin: 5px 0;
+	width: 250px;
+	max-height: 65px;
+	overflow: auto;
+}
+
+.btnBox {
+	margin: 0 auto;
+	width: 250px;
+}

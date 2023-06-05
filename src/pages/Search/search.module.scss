@@ -1,0 +1,42 @@
+.pagination {
+	button {
+		background-color: transparent !important;
+	}
+	button:hover {
+		color: var(--color-primary) !important;
+		border-color: var(--color-primary) !important;
+	}
+	li {
+		background-color: transparent;
+		a {
+			color: var(--color-primaryTextColor);
+		}
+
+		button {
+			color: var(--color-primaryTextColor);
+		}
+	}
+	li:hover {
+		border-color: var(--color-primary);
+		a {
+			color: var(--color-primary);
+		}
+	}
+	li:active {
+		border-color: var(--color-primary) !important;
+	}
+}
+
+.container {
+	padding-top: 60px;
+	width: 100%;
+	min-height: 80vh;
+	color: var(--color-primaryTextColor);
+	background-color: var(--color-background);
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}

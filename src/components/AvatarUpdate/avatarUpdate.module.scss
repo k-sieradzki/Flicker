@@ -1,0 +1,61 @@
+.photoBox {
+	position: relative;
+	margin: 0 auto 20px;
+	cursor: pointer;
+}
+
+.profilePhoto {
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid var(--color-primary);
+	height: 120px;
+	width: 120px;
+	img {
+		display: block;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.profilePhoto:hover::before {
+	position: absolute;
+	content: 'Change';
+	color: #fff;
+	line-height: 120px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120px;
+	height: 120px;
+	background-color: rgba(66, 66, 66, 0.6);
+	text-align: center;
+}
+
+.trashBox {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: var(--color-primary);
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+input[type='file'] {
+	display: none;
+}
+
+.customFileUpload {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}

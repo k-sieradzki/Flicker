@@ -1,0 +1,11 @@
+.longButton {
+	align-self: center;
+	width: 100%;
+	padding: 15px 0;
+	border: none;
+	border-radius: 5px;
+	color: var(--color-textOnColor);
+	background-color: var(--color-primary);
+	box-shadow: 0 5px 33px -16px var(--color-primaryShadow);
+	cursor: pointer;
+}

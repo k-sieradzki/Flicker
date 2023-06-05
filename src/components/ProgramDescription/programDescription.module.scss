@@ -1,0 +1,200 @@
+.programMainContainer {
+	min-height: 100vh;
+	color: var(--color-primaryTextColor);
+	background-color: var(--color-background);
+}
+.wrapper {
+	overflow: auto;
+}
+
+.accordionBox {
+	width: 100%;
+	max-width: 355px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+.programHead {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	max-height: 90vh;
+	min-height: 400px;
+	.headImage {
+		display: block;
+		width: 100%;
+		object-fit: cover;
+		object-position: top;
+		background-color: var(--color-placeholder);
+	}
+}
+.programHead::after {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(1, 1, 1, 0.1);
+	background-image: linear-gradient(
+		rgba(var(--color-gradientColor), 0) 49.02%,
+		rgba(var(--color-gradientColor), 0.008) 52.42%,
+		rgba(var(--color-gradientColor), 0.035) 55.82%,
+		rgba(var(--color-gradientColor), 0.082) 59.22%,
+		rgba(var(--color-gradientColor), 0.15) 62.62%,
+		rgba(var(--color-gradientColor), 0.23) 66.02%,
+		rgba(var(--color-gradientColor), 0.333) 69.41%,
+		rgba(var(--color-gradientColor), 0.443) 72.81%,
+		rgba(var(--color-gradientColor), 0.557) 76.21%,
+		rgba(var(--color-gradientColor), 0.667) 79.61%,
+		rgba(var(--color-gradientColor), 0.77) 83.01%,
+		rgba(var(--color-gradientColor), 0.85) 86.41%,
+		rgba(var(--color-gradientColor), 0.918) 89.8%,
+		rgba(var(--color-gradientColor), 0.965) 93.2%,
+		rgba(var(--color-gradientColor), 0.992) 96.6%,
+		rgb(var(--color-gradientColor)) 100%
+	);
+}
+.container {
+	position: relative;
+}
+.programBody {
+	padding: 0 20px 30px 20px;
+	background-color: #111;
+}
+.programTitle {
+	max-width: 800px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+.programShortInfo {
+	display: flex;
+	align-items: center;
+}
+
+.programRuntime {
+	font-size: 0.8em;
+	margin-left: 20px;
+	color: var(--color-textOnColor);
+}
+.programReleaseDate {
+	font-size: 0.8em;
+	margin-left: 20px;
+	color: var(--color-textOnColor);
+}
+
+.programGenres {
+	display: flex;
+	color: var(--color-grayText);
+
+	p {
+		margin: 0 5px;
+	}
+	span {
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+		font-size: 0.9em;
+	}
+}
+
+.programDesc {
+	max-width: 600px;
+	max-height: 200px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: var(--color-textOnColor);
+	overflow: auto;
+}
+
+.programButtons {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	button {
+		margin-right: 20px;
+	}
+}
+
+.detailsBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 30px 20px 20px 20px;
+}
+.singlechart {
+	width: 45px;
+}
+.circlebg {
+	fill: none;
+	stroke: var(--color-placeholder);
+	stroke-width: 3.8;
+}
+.circle {
+	fill: none;
+	stroke-width: 2.8;
+	stroke-linecap: round;
+}
+.circularchart.green .circle {
+	stroke: limegreen;
+}
+.circularchart.yellow .circle {
+	stroke: yellow;
+}
+.circularchart.red .circle {
+	stroke: red;
+}
+.circularchart.gray .circle {
+	stroke: gray;
+}
+
+.percentage {
+	fill: var(--color-textOnColor);
+	font-size: 0.5em;
+	text-anchor: middle;
+}
+
+
+@media (min-width: 768px) {
+	.accordionBox {
+		margin-right: 20px;
+	}
+	.programHead {
+		height: 70vh;
+	}
+	.programTitle {
+		font-size: 2em;
+	}
+	.programBody {
+		position: absolute;
+		left: 0;
+		padding: 0 20px;
+		bottom: 30px;
+		background-color: transparent;
+	}
+}
+
+@media (min-width: 992px) {
+	.programHead {
+		height: 70vh;
+	}
+	.programTitle {
+		font-size: 3em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.accordionBox {
+		margin-right: 40px;
+	}
+	.programHead {
+		height: 80vh;
+	}
+	.programGenres {
+		font-size: 18px;
+	}
+	.programDesc {
+		font-size: 16px;
+	}
+}

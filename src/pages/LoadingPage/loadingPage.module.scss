@@ -1,0 +1,15 @@
+.loadingPageContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: var(--color-background);
+	img {
+		width: 150px;
+		height: 150px;
+	}
+	.loadingCircle {
+		margin-top: 50px;
+	}
+}

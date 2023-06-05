@@ -1,0 +1,45 @@
+.getStatedContainer {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95)),
+		url(../../assets/images/background_main.jpg);
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	overflow: auto;
+}
+.wrapper {
+	margin: auto 0;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.bigText {
+	font-size: 30px;
+	font-weight: bold;
+	color: var(--color-textOnColor);
+}
+.commonText {
+	margin: 30px 0;
+	font-size: 14px;
+	line-height: 24px;
+	color: var(--color-textOnColor);
+}
+.btnBox {
+	margin: 0 auto;
+	width: 250px;
+}
+
+@media (min-width: 576px) {
+	.bigText {
+		font-size: 3.8em;
+	}
+	.commonText {
+		font-size: 0.9em;
+	}
+}

@@ -1,0 +1,50 @@
+.pagination {
+	button {
+		background-color: transparent !important;
+	}
+	button:hover {
+		color: var(--color-primary) !important;
+		border-color: var(--color-primary) !important;
+	}
+	li {
+		background-color: transparent;
+		a {
+			color: var(--color-primaryTextColor);
+		}
+
+		button {
+			color: var(--color-primaryTextColor);
+		}
+	}
+	li:hover {
+		border-color: var(--color-primary);
+		a {
+			color: var(--color-primary);
+		}
+	}
+	li:active {
+		border-color: var(--color-primary) !important;
+	}
+}
+
+.paginationBox {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.fullListMainContainer {
+	padding: 0 15px 20px 15px;
+	color: var(--color-primaryTextColor);
+	background-color: var(--color-background);
+	height: 100vh;
+}
+
+.thumbnailsContainer {
+	margin-top: 100px;
+}
+.fullListTitle {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 20px;
+}

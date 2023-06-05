@@ -1,0 +1,103 @@
+.resetPwPageContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+	margin: 0 auto;
+	color: var(--color-textOnColor);
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.95)),
+		url(../../assets/images/background_main.jpg);
+	background-size: cover;
+	background-position: center;
+
+	img {
+		align-self: center;
+		height: 100px;
+		width: 100px;
+	}
+
+	h2 {
+		margin: 20px;
+	}
+}
+
+.inputBox {
+	position: relative;
+}
+.resetBoxIcon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	transform: translateY(-50%);
+	color: var(--color-grayTextLogin);
+	pointer-events: none;
+	font-size: 14px;
+}
+
+.wrapper {
+	overflow: auto;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 30px 0;
+	width: 90%;
+	max-width: 500px;
+	height: 530px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.resetForm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 17px;
+	color: var(--color-textOnColor);
+	input[type='email'],
+	input[type='password'] {
+		padding: 15px 30px;
+		margin: 5px 0;
+		color: var(--color-textOnColor);
+		background-color: var(--color-inputLoginColor);
+		border: 1px solid transparent;
+		outline: none;
+		border-radius: 5px;
+		width: 250px;
+	}
+	input[type='email']:focus,
+	input[type='password']:focus {
+		background-color: var(--color-inputLoginFocus);
+	}
+}
+.errorInput {
+	border: 1px solid red !important;
+}
+
+.errorBox {
+	font-size: 0.9em;
+	color: red;
+	padding: 5px 0 10px 0;
+	margin: 5px 0;
+	width: 270px;
+	max-height: 65px;
+	overflow-x: hidden;
+}
+
+.btnBox {
+	margin: 0 auto;
+	width: 250px;
+}
+
+.smallText {
+	padding-top: 25px;
+	font-size: 11px;
+	color: var(--color-grayTextLogin);
+	span {
+		color: var(--color-primary);
+		font-weight: bold;
+		cursor: pointer;
+	}
+}

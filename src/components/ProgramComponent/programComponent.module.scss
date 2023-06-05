@@ -1,0 +1,185 @@
+.programMainContainer {
+	min-height: 100vh;
+	color: var(--color-primaryTextColor);
+	background-color: var(--color-background);
+}
+.wrapper {
+	overflow: auto;
+}
+
+.accordionBox {
+	width: 100%;
+	max-width: 355px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+.container {
+	position: relative;
+}
+.programBody {
+	padding: 0 20px;
+	margin-left: 2%;
+}
+.programTitle {
+	max-width: 800px;
+	-webkit-text-fill-color: white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+.programShortInfo {
+	display: flex;
+	align-items: center;
+}
+
+.programRuntime {
+	font-size: 0.8em;
+	margin-left: 20px;
+	color: var(--color-textOnColor);
+}
+.programReleaseDate {
+	font-size: 0.8em;
+	margin-left: 20px;
+	color: var(--color-textOnColor);
+}
+
+.programGenres {
+	display: flex;
+	color: var(--color-grayText);
+
+	p {
+		margin: 0 5px;
+	}
+	span {
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+		font-size: 0.9em;
+	}
+}
+
+.programDesc {
+	max-width: 600px;
+	max-height: 200px;
+	margin-top: 10px;
+	font-size: 14px;
+	color: var(--color-textOnColor);
+	overflow: auto;
+}
+
+.programButtons {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	button {
+		margin-right: 20px;
+	}
+}
+
+.categoryBtns {
+	margin: 40px 0 0 0;
+	text-align: center;
+	button {
+		padding: 5px 5px;
+		margin: 0 5px;
+		border: none;
+		font-size: 15px;
+		font-weight: bold;
+		letter-spacing: 0.02em;
+		color: var(--color-primaryTextColor);
+		background-color: transparent;
+		cursor: pointer;
+	}
+	.activeBtn {
+		border-bottom: 3px solid var(--color-primary);
+		border-radius: 3px;
+		color: var(--color-primary);
+	}
+}
+.detailsBox {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 30px 20px 20px 20px;
+}
+.singlechart {
+	width: 45px;
+}
+.circlebg {
+	fill: none;
+	stroke: var(--color-placeholder);
+	stroke-width: 3.8;
+}
+.circle {
+	fill: none;
+	stroke-width: 2.8;
+	stroke-linecap: round;
+}
+.circularchart.green .circle {
+	stroke: limegreen;
+}
+.circularchart.yellow .circle {
+	stroke: yellow;
+}
+.circularchart.red .circle {
+	stroke: red;
+}
+.circularchart.gray .circle {
+	stroke: gray;
+}
+
+.percentage {
+	fill: var(--color-textOnColor);
+	font-size: 0.5em;
+	text-anchor: middle;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+	.programMainContainer {
+		.accordionBox {
+			margin-right: 20px;
+		}
+		.programHead {
+			height: 70vh;
+		}
+		.programTitle {
+			font-size: 2em;
+		}
+		.programBody {
+			position: absolute;
+			left: 0;
+			bottom: 30px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.programMainContainer {
+		.programHead {
+			height: 70vh;
+		}
+		.programTitle {
+			font-size: 3em;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.programMainContainer {
+		.accordionBox {
+			margin-right: 40px;
+		}
+		.programHead {
+			height: 80vh;
+		}
+		.programGenres {
+			font-size: 18px;
+		}
+		.programDesc {
+			font-size: 16px;
+		}
+	}
+}

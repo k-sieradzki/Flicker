@@ -1,0 +1,11 @@
+.primaryButton {
+	align-self: center;
+	width: 125px;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: var(--color-textOnColor);
+	background-color: var(--color-primary);
+	box-shadow: 0 5px 33px -16px var(--color-primaryShadow);
+	cursor: pointer;
+}

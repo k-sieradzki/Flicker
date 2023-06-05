@@ -1,0 +1,29 @@
+.filterList {
+	.activeFilter {
+		background-color: var(--color-primary);
+		color: var(--color-textOnColor);
+	}
+	label {
+		padding: 0 10px;
+		font-size: 16px;
+		color: var(--color-primaryTextColor);
+		border: 2px solid var(--color-primary);
+		border-radius: 5px;
+		margin-right: 10px;
+
+		input {
+			position: fixed;
+			opacity: 0;
+			pointer-events: none;
+		}
+	}
+}
+
+.filterList {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+	label {
+		cursor: pointer;
+	}
+}

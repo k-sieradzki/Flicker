@@ -1,0 +1,37 @@
+:root {
+	--color-gradientColor: 17, 17, 17;
+	--color-grayText: #ffffffb3;
+	--color-primary: #ff0000;
+	--color-primaryShadow: #460e0f;
+	--color-background: #ecf0f1;
+	--color-placeholder: #aaaaaa;
+	--color-successAlert: green;
+	--color-formInput: #fff;
+	--color-formInputFocus: #fff;
+	--color-primaryTextColor: #111;
+	--color-grayTextLogin: #ffffffb3;
+	--color-inputLoginColor: #333;
+	--color-inputLoginFocus: #575757;
+	--color-textOnColor: #fff;
+	--color-navBarFull: #111;
+	--color-navBarTransparent: #fff;
+}
+
+[data-theme='dark'] {
+	--color-gradientColor: 17, 17, 17;
+	--color-grayText: #ffffffb3;
+	--color-primary: #ff0000;
+	--color-primaryShadow: #460e0f;
+	--color-background: #111;
+	--color-placeholder: #aaaaaa;
+	--color-successAlert: green;
+	--color-formInput: #333;
+	--color-formInputFocus: #575757;
+	--color-primaryTextColor: #fff;
+	--color-grayTextLogin: #ffffffb3;
+	--color-inputLoginColor: #333;
+	--color-inputLoginFocus: #575757;
+	--color-textOnColor: #fff;
+	--color-navBarFull: #fff;
+	--color-navBarTransparent: #fff;
+}

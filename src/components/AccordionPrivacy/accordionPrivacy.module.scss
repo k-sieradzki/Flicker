@@ -1,0 +1,16 @@
+.accordion {
+	width: 100%;
+	max-width: 100%;
+}
+.accordionHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.content {
+	margin: 0 10px;
+	color: var(--color-primaryTextColor);
+	font-size: 13px;
+}

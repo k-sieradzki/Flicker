@@ -1,0 +1,25 @@
+.popularFilters {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex-shrink: 0;
+	flex-wrap: wrap;
+	padding: 20px;
+	overflow-x: auto;
+	.filter {
+		flex-shrink: 0;
+		margin: 0 10px 5px 0;
+		border-radius: 5px;
+		border: 2px solid var(--color-primary);
+		padding: 0 10px;
+		width: 100px;
+		text-align: center;
+		word-wrap: break-word;
+		cursor: pointer;
+	}
+}
+
+.active {
+	background-color: var(--color-primary);
+	color: var(--color-textOnColor);
+}

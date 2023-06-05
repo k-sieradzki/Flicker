@@ -1,0 +1,41 @@
+.searchBoxDiv {
+	width: 100%;
+	margin-right: 20px;
+}
+.exploreTop {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.searchboxMainContainer {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+.searchBoxInput {
+	border: none;
+	outline: none;
+	padding: 10px 10px 10px 40px;
+	border-radius: 20px 0 0 20px;
+	background-color: var(--color-formInput);
+	font-size: 1em;
+	width: 100%;
+	color: var(--color-primaryTextColor);
+	transition: background-color 0.3s;
+}
+
+.searchBoxInput:focus {
+	outline: none;
+	background-color: var(--color-formInputFocus);
+}
+
+.searchIcon {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+}

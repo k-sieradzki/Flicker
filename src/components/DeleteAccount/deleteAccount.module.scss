@@ -1,0 +1,55 @@
+.profileForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.noWayBack {
+	font-size: 0.7em;
+	margin-bottom: 20px;
+}
+
+.profileForm {
+	position: relative;
+	color: var(--color-primaryTextColor);
+	.formDiv {
+		width: 100%;
+		max-width: 350px;
+	}
+	.profileLabel {
+		font-size: 0.7em;
+	}
+
+	input {
+		padding: 15px 15px;
+		color: var(--color-primaryTextColor);
+		background-color: var(--color-formInput);
+		border: none;
+		border-radius: 10px;
+		margin-bottom: 50px;
+	}
+	input {
+		width: 100%;
+	}
+
+	input:focus {
+		background-color: var(--color-formInputFocus);
+	}
+}
+
+.updateBtn {
+	width: 100%;
+	max-width: 250px;
+}
+
+.profileUpdateInfo {
+	position: absolute;
+	bottom: 50px;
+	height: 30px;
+	max-width: 350px;
+	overflow: auto;
+	font-size: 0.8em;
+	color: red;
+	margin-bottom: 10px;
+}
