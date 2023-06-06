@@ -24,6 +24,7 @@ Password: flicker
 - Web browser
 
 ## Installation
+Recommended version node v18.16.0 and npm v9.6.7
 
 1. Ensure that Node.js is installed on your machine.
 2. Open the terminal and navigate to the project directory.
