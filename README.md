@@ -52,6 +52,8 @@ The project's directory structure is organized as follows:
 - Firebase: Used for user authentication and data storage.
 - TypeScript: The programming language used for development.
 - React: The JavaScript library for building the user interface.
+- React-Router: Is used for implementing routing in React applications.
 - Redux: State management library for React applications.
+- SCSS Modules: For styling components
 
 ![Flicker App](https://i.imgur.com/w48S4QS.jpeg)
